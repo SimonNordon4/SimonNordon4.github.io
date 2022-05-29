@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simon Nordon Product Designer Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo 2:100,300,400,500,700,900" rel="stylesheet">
+</head>
+
+
+
+<body id="blog">
+    <div class=overflow-wrapper>
+        <div class=body-width>
+            <!--Nav Bar Begin-->
+            <nav>
+                <a id="nav-logo" href="/index.html">
+
+                    <p id="nav-logo-initial">S</p>
+
+                    <div id="nav-logo-dot"></div>
+
+                    <p>Nordon</p>
+                </a>
+                <div id="nav-menu">
+                    <a id=nav-menu-work href="/index.html">Work</a>
+                    <a id=nav-menu-blog href="/blog.html">Blog</a>
+                    <a id=nav-menu-about href="/about.html">About</a>
+                </div>
+            </nav>
+
+            <!--Title Begin-->
+            <section id="title">
+                <div id="title-detail-dot"></div>
+                <div id="title-container">
+                    <p>Simon Nordon's</p>
+                    <h1>Blog Posts</h1>
+                    <p>Covering design topics from technical detail, data analytics and personal learnings.</p>
+                </div>
+            </section>
+
+            <div class='divider'></div>
+
+
+            <!--Blog Posts Begin-->
+
+            <script>
+                function AnimateStart(string, width) {
+                    var learnMoreLine = document.getElementById(string + "-learn-more-line");
+                    var learnMoreDot = document.getElementById(string + "-learn-more-dot");
+                    var heroImg = document.getElementById(string + '-image');
+                    learnMoreLine.style.width = width;
+                    learnMoreDot.style.height = '20px';
+                    learnMoreDot.style.width = '20px';
+                    learnMoreDot.style.marginTop = '-10px';
+                    learnMoreDot.style.backgroundColor = 'white';
+                    learnMoreDot.style.opacity = '1';
+                    heroImg.style.transform = 'scale(1)';
+                }
+                function AnimateEnd(string) {
+                    var learnMoreLine = document.getElementById(string + "-learn-more-line");
+                    var learnMoreDot = document.getElementById(string + "-learn-more-dot");
+                    var heroImg = document.getElementById(string + '-image');
+                    learnMoreLine.style.width = '135px';
+                    learnMoreDot.style.height = '1px';
+                    learnMoreDot.style.width = '1px';
+                    learnMoreDot.style.marginTop = '0px';
+                    learnMoreDot.style.opacity = '0'
+                    heroImg.style.transform = 'scale(1)';
+                }
+            </script>
+
+            <section class="project">
+                <article class='project-description'>
+                    <h2>Making this website</h2>
+                    <time>2/10/2020</time>
+                    <p>How and why I decided to build a personal website from scratch.</p>
+                    <a href="" onmouseover="AnimateStart('b1','40em')" onmouseout="AnimateEnd('b1')">
+                        <h3>Learn more
+                            <span><img src="resources/images/arrow.png" alt="an arrow" height=12px></span>
+                            <div id='b1-learn-more-line' class=learn-more-line>
+                                <div id='b1-learn-more-dot' class=learn-more-dot></div>
+                            </div>
+                        </h3>
+                    </a>
+                </article>
+                <figure class='project-image'>
+                    <a href="" onmouseover="AnimateStart('b1','40em')" onmouseout="AnimateEnd('b1')">
+                        <img id='b1-image' class='project-image-bg' src="resources/images/blog-coming-soon.jpg">
+                    </a>
+                </figure>
+                <div class='project-mobile'>
+                    <h2>Making this website</h2>
+                    <time>2/10/2020</time>
+                </div>
+
+            </section>
+
+            <section class="project gray">
+                <article class='project-description'>
+                    <h2>Steam Sales Analysis</h2>
+                    <time>2/10/2020</time>
+                    <p>A deep look at steam game sales by genre, and what it means for game developers.</p>
+                    <a href="" onmouseover="AnimateStart('b2','40em')" onmouseout="AnimateEnd('b2')">
+                        <h3>Learn more
+                            <span><img src="resources/images/arrow.png" alt="an arrow" height=12px></span>
+                            <div id='b2-learn-more-line' class=learn-more-line>
+                                <div id='b2-learn-more-dot' class=learn-more-dot></div>
+                            </div>
+                        </h3>
+                    </a>
+                </article>
+                <figure class='project-image'>
+                    <a href="" onmouseover="AnimateStart('b2','40em')" onmouseout="AnimateEnd('b2')">
+                        <img id='b2-image' class='project-image-bg' src="resources/images/blog-coming-soon.jpg">
+                    </a>
+                </figure>
+                <div class='project-mobile'>
+                    <h2>Steam Sales Analysis</h2>
+                    <time>2/10/2020</time>
+                </div>
+
+
+            </section>
+
+            <section class="project">
+                <article class='project-description'>
+                    <h2>Quitting Video Games</h2>
+                    <time>2/10/2020</time>
+                    <p>A game developer who doesn't play games? The data shows it was the right choice.</p>
+                    <a href="" onmouseover="AnimateStart('b3','40em')" onmouseout="AnimateEnd('b3')">
+                        <h3>Learn more
+                            <span><img src="resources/images/arrow.png" alt="an arrow" height=12px></span>
+                            <div id='b3-learn-more-line' class=learn-more-line>
+                                <div id='b3-learn-more-dot' class=learn-more-dot></div>
+                            </div>
+                        </h3>
+                    </a>
+                </article>
+                <figure class='project-image'>
+                    <a href="" onmouseover="AnimateStart('b3','40em')" onmouseout="AnimateEnd('b1')">
+                        <img id='b3-image' class='project-image-bg' src="resources/images/blog-coming-soon.jpg">
+                    </a>
+                </figure>
+                <div class='project-mobile'>
+                    <h2>Quitting Video Games</h2>
+                    <time>2/10/2020</time>
+                </div>
+
+            </section>
+
+            <div class=divider></div>
+
+            <!--Footer Begin-->
+            <footer>
+                <script>
+                    function Hint(string) {
+                        if (string == 'email') {
+                            var targetID = document.getElementById('email-hint');
+                            var otherID = document.getElementById('phone-hint');
+                            otherID.style.opacity = '0';
+                            otherID.style.zIndex = '0';
+                            targetID.style.opacity = '1';
+                            targetID.style.zIndex = '1';
+                            return;
+
+                        }
+                        else if (string == 'phone') {
+                            var targetID = document.getElementById('phone-hint');
+                            var otherID = document.getElementById('email-hint');
+                            otherID.style.opacity = '0';
+                            otherID.style.zIndex = '0';
+                            targetID.style.opacity = '1';
+                            targetID.style.zIndex = '1';
+                            return;
+                        }
+                        else {
+                            var targetID = document.getElementById('phone-hint');
+                            var otherID = document.getElementById('email-hint');
+                            otherID.style.opacity = '0';
+                            otherID.style.zIndex = '0';
+                            targetID.style.opacity = '0';
+                            targetID.style.zIndex = '0';
+                            return;
+                        }
+                    }
+
+                </script>
+                <section onmouseover="Hint('')">
+                    <h2>Want to know more?</h2>
+                    <p>Feel free to call, text or email any time. You can also learn more about me <span><a
+                                id="highlight" href="/about.html">here</a></span>.</p>
+                </section>
+                <section id="footer">
+                    <a id="footer-image" href="/about.html" onmouseover="Hint()">
+                        <img src="resources/images/headshots/HeadShot01.jpg" alt="Simon Nordon Headshot"></a>
+                    <section id="footer-links">
+                        <div id="footer-links-contact">
+                            <!--Special Hint Links-->
+                            <div id='email-hint' class=footer-links-contact-hint onmouseout="Hint()">
+                                <p>Simon.nordon@gmail.com</p>
+                            </div>
+                            <div id='phone-hint' class=footer-links-contact-hint onmouseout="Hint()">
+                                <p>+61 426 747 486</p>
+                            </div>
+
+                            <!--Normal Links-->
+                            <a id="footer-links-contact-email" href="mailto:simon.nordon@gmail.com"
+                                onmouseover="Hint('email')">
+                                <img src="resources/images/gmail_logo.png" height=16px alt="Email">
+                            </a>
+                            <a id="footer-links-contact-phone" href="tel:+61426-747-486" onmouseover="Hint('phone')">
+                                <img src="resources/images/phone_logo.png" height=16px alt="Phone Number">
+                            </a>
+                            <a href="https://www.linkedin.com/in/simon-nordon-65868b76/" target="_blank"
+                            onmouseover="Hint('')">
+                            <img src="resources/images/logoSocialA.png" height=18px alt="">
+                        </a>
+                        <a href="https://twitter.com/SimonNordon" target="_blank" onmouseover="Hint('')">
+                            <img src="resources/images/logoSocialB.png" height=16px alt="">
+                        </a>
+                        </div>
+                        <a id="footer-links-resume" href="resources/downloads/simon-nordon-resume-2020.pdf" download="resources/downloads/simon-nordon-resume-2020.pdf" onmouseover="Hint()">Download Resume</a>
+                    </section>
+                </section>
+                <section>
+                    <p id='footer-trademark'>This website was made by me from scratch</p>
+                    <p id='footer-copyright'>© Simon Nordon 2020</p>
+                </section>
+            </footer>
+        </div>
+    </div>
+</body>
