@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simon Nordon Product Designer Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo 2:100,300,400,500,700,900" rel="stylesheet">
+</head>
+
+<body id="index">
+    <div class=overflow-wrapper>
+        <div class=body-width>
+            <!--Nav Bar Begin-->
+            <nav>
+                <a id="nav-logo" href="/index.html">
+
+                    <p id="nav-logo-initial">S</p>
+
+                    <div id="nav-logo-dot"></div>
+
+                    <p>Nordon</p>
+                </a>
+                <div id="nav-menu">
+                    <a id=nav-menu-work href="/index.html">Work</a>
+                    <a id=nav-menu-blog href="/blog.html">Blog</a>
+                    <a id=nav-menu-about href="/about.html">About</a>
+                </div>
+            </nav>
+
+            <!--Hero Begin-->
+            <section id='hero'>
+                <div id='hero-bg'></div>
+                <section id='hero-text'>
+                    <p>Hello, I am</p>
+                    <h1>Simon Nordon</h1>
+                    <p>Product Designer based in Australia working across web, mobile and XR.</p>
+                </section>
+                <section id='hero-image'>
+                    <img src="resources/images/hero/Render02.png" alt="a floating cube">
+                    <img id='hero-image-shadow' src="resources/images/hero/Render02_Shadow.png" alt="a cube's shadow">
+                </section>
+                <section id = 'hero-video'>
+                    <video with="1120px" height = "460" autoplay loop>
+                        <source src = "resources/video/Hero01.mp4" type = "video/mp4">
+                        Your browser does not support video.
+                    </video>
+                </section>
+            </section>
+
+            <div class=divider>
+                <p>recent projects</p>
+            </div>
+
+            <!--Recent Projects Begin-->
+            <script>
+                function AnimateStart(string, width) {
+                    var learnMoreLine = document.getElementById(string + "-learn-more-line");
+                    var learnMoreDot = document.getElementById(string + "-learn-more-dot");
+                    var heroImg = document.getElementById(string + '-hero');
+                    learnMoreLine.style.width = width;
+                    learnMoreDot.style.height = '20px';
+                    learnMoreDot.style.width = '20px';
+                    learnMoreDot.style.marginTop = '-10px';
+                    learnMoreDot.style.backgroundColor = 'white';
+                    learnMoreDot.style.opacity = '1';
+                    heroImg.style.transform = 'scale(1.03)';
+                }
+                function AnimateEnd(string) {
+                    var learnMoreLine = document.getElementById(string + "-learn-more-line");
+                    var learnMoreDot = document.getElementById(string + "-learn-more-dot");
+                    var heroImg = document.getElementById(string + '-hero');
+                    learnMoreLine.style.width = '135px';
+                    learnMoreDot.style.height = '1px';
+                    learnMoreDot.style.width = '1px';
+                    learnMoreDot.style.marginTop = '0px';
+                    learnMoreDot.style.opacity = '0'
+                    heroImg.style.transform = 'scale(1)';
+                }
+            </script>
+
+            <section class="project">
+                <article class='project-description'>
+                    <h2>Kindergo</h2>
+                    <p>Kindergo is a children's reading app with over 100,000 users and has been featured as app of the
+                        day several times.</p>
+                    <a href="kindergo.html" onmouseover="AnimateStart('kindergo','40em')"
+                        onmouseout="AnimateEnd('kindergo')">
+                        <h3>Learn more
+                            <span><img src="resources/images/arrow.png" alt="an arrow" height=12px></span>
+                            <div id='kindergo-learn-more-line' class=learn-more-line>
+                                <div id='kindergo-learn-more-dot' class=learn-more-dot></div>
+                            </div>
+                        </h3>
+                    </a>
+                </article>
+                <figure class='project-image'>
+                    <img class='project-image-bg' src="resources/images/kindergo/Kindergo-Hero.jpg">
+                    <a href="kindergo.html" onmouseover="AnimateStart('kindergo','40em')"
+                        onmouseout="AnimateEnd('kindergo')"><img id='kindergo-hero' class='project-image-hero'
+                            src="resources/images/kindergo/GoGoCutout.png"></a>
+                </figure>
+                <h2 class=project-mobile-title>Kindergo</h2>
+            </section>
+
+            <section class="project right">
+                <article class='project-description'>
+                    <h2>Sanctuary World</h2>
+                    <p>Sanctuary World is mobile game released along side the premiere of "The Wishmas Tree". The first
+                        feature film from Pony up Picture Studios.</p>
+                    <a href="sanctuaryworld.html" onmouseover="AnimateStart('sw','25.5em')" onmouseout="AnimateEnd('sw')">
+                        <h3><span><img src="resources/images/arrow.png" alt="an arrow" height=12px></span>Learn more
+
+                            <div id='sw-learn-more-line' class=learn-more-line>
+                                <div id='sw-learn-more-dot' class=learn-more-dot></div>
+                            </div>
+                        </h3>
+                    </a>
+
+                </article>
+                <figure class='project-image'>
+                    <img class='project-image-bg' src="resources/images/sanctuaryworld/SW_Hero_BG.jpg">
+                    <a href="sanctuaryworld.html" onmouseover="AnimateStart('sw','25.5em')" onmouseout="AnimateEnd('sw')"><img id='sw-hero'
+                            class='project-image-hero' src="resources/images/sanctuaryworld/Frogman01.png"></a>
+                </figure>
+                <h2 class=project-mobile-title>Sanctuary World</h2>
+            </section>
+
+            <section class="project">
+                <article class='project-description'>
+                    <h2>Warhammer Warlords</h2>
+                    <p>Warlords is a two week design challenge to create a card game set in the Warhammer universe.
+                        Awaiting IP approval.</p>
+                    <a href="warhammerwarlords.html" onmouseover="AnimateStart('ww','40em')" onmouseout="AnimateEnd('ww')">
+                        <h3>Learn more
+                            <span><img src="resources/images/arrow.png" alt="an arrow" height=12px></span>
+                            <div id='ww-learn-more-line' class=learn-more-line>
+                                <div id='ww-learn-more-dot' class=learn-more-dot></div>
+                            </div>
+                        </h3>
+                    </a>
+                </article>
+                <figure class='project-image'>
+                    <img class='project-image-bg' src="resources/images/warhammerwarlords/hero-image-bg.jpg">
+                    <a href="warhammerwarlords.html" onmouseover="AnimateStart('ww','40em')" onmouseout="AnimateEnd('ww')"><img id='ww-hero'
+                            class='project-image-hero'
+                            src="resources/images/warhammerwarlords/warhammer-warlords-hero.png"></a>
+                </figure>
+                <h2 class=project-mobile-title>Warhammer Warlords</h2>
+            </section>
+
+            <div class=divider>
+            </div>
+
+            <Section id='blog-link'>
+                <a href="blog.html">Read the Blog <img src="/resources/images/arrow.png" alt="an arrow" height=16px></a>
+            </Section>
+
+            <div class=divider>
+            </div>
+
+            <!--Footer Begin-->
+            <footer>
+                <script>
+                    function Hint(string) {
+                        if (string == 'email') {
+                            var targetID = document.getElementById('email-hint');
+                            var otherID = document.getElementById('phone-hint');
+                            otherID.style.opacity = '0';
+                            otherID.style.zIndex = '0';
+                            targetID.style.opacity = '1';
+                            targetID.style.zIndex = '1';
+                            return;
+
+                        }
+                        else if (string == 'phone') {
+                            var targetID = document.getElementById('phone-hint');
+                            var otherID = document.getElementById('email-hint');
+                            otherID.style.opacity = '0';
+                            otherID.style.zIndex = '0';
+                            targetID.style.opacity = '1';
+                            targetID.style.zIndex = '1';
+                            return;
+                        }
+                        else {
+                            var targetID = document.getElementById('phone-hint');
+                            var otherID = document.getElementById('email-hint');
+                            otherID.style.opacity = '0';
+                            otherID.style.zIndex = '0';
+                            targetID.style.opacity = '0';
+                            targetID.style.zIndex = '0';
+                            return;
+                        }
+                    }
+
+                </script>
+                <section onmouseover="Hint('')">
+                    <h2>Want to know more?</h2>
+                    <p>Feel free to call, text or email any time. You can also learn more about me <span><a
+                                id="highlight" href="/about.html">here</a></span>.</p>
+                </section>
+                <section id="footer">
+                    <a id="footer-image" href="/about.html" onmouseover="Hint()">
+                        <img src="resources/images/headshots/HeadShot01.jpg" alt="Simon Nordon Headshot"></a>
+                    <section id="footer-links">
+                        <div id="footer-links-contact">
+                            <!--Special Hint Links-->
+                            <div id='email-hint' class=footer-links-contact-hint onmouseout="Hint()">
+                                <p>Simon.nordon@gmail.com</p>
+                            </div>
+                            <div id='phone-hint' class=footer-links-contact-hint onmouseout="Hint()">
+                                <p>+61 426 747 486</p>
+                            </div>
+
+                            <!--Normal Links-->
+                            <a id="footer-links-contact-email" href="mailto:simon.nordon@gmail.com"
+                                onmouseover="Hint('email')">
+                                <img src="resources/images/gmail_logo.png" height=16px alt="Email">
+                            </a>
+                            <a id="footer-links-contact-phone" href="tel:+61426-747-486" onmouseover="Hint('phone')">
+                                <img src="resources/images/phone_logo.png" height=16px alt="Phone Number">
+                            </a>
+                            <a href="https://www.linkedin.com/in/simon-nordon-65868b76/" target="_blank"
+                                onmouseover="Hint('')">
+                                <img src="resources/images/logoSocialA.png" height=18px alt="">
+                            </a>
+                            <a href="https://twitter.com/SimonNordon" target="_blank" onmouseover="Hint('')">
+                                <img src="resources/images/logoSocialB.png" height=16px alt="">
+                            </a>
+                        </div>
+                        <a id="footer-links-resume" href="resources/downloads/simon-nordon-resume-2020.pdf" download="resources/downloads/simon-nordon-resume-2020.pdf" onmouseover="Hint()">Download Resume</a>
+                    </section>
+                </section>
+                <section>
+                    <p id='footer-trademark'>This website was made by me from scratch</p>
+                    <p id='footer-copyright'>© Simon Nordon 2020</p>
+                </section>
+            </footer>
+        </div>
+    </div>
+</body>
