@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Simon Nordon Product Designer Portfolio</title>
+    <title>Simon Nordon Developer Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Exo 2:100,300,400,500,700,900" rel="stylesheet">
@@ -34,22 +34,16 @@
                 <section id='hero-text'>
                     <p>Hello, I am</p>
                     <h1>Simon Nordon</h1>
-                    <p>Product Designer based in Australia working across web, mobile and XR.</p>
+                    <p>XR, Games, Mobile & Web Developer.</p>
                 </section>
                 <section id='hero-image'>
                     <img src="resources/images/hero/Render02.png" alt="a floating cube">
                     <img id='hero-image-shadow' src="resources/images/hero/Render02_Shadow.png" alt="a cube's shadow">
                 </section>
-                <section id = 'hero-video'>
-                    <video with="1120px" height = "460" autoplay loop>
-                        <source src = "resources/video/Hero01.mp4" type = "video/mp4">
-                        Your browser does not support video.
-                    </video>
-                </section>
             </section>
 
             <div class=divider>
-                <p>recent projects</p>
+                <p>recent posts</p>
             </div>
 
             <!--Recent Projects Begin-->
@@ -78,6 +72,30 @@
                     heroImg.style.transform = 'scale(1)';
                 }
             </script>
+            <section class="project right">
+                <article class='project-description'>
+                    <h2>Unity WebGL Input</h2>
+                    <p>Unity WebGL Mouse Input is completely broken. Here's how I fixed it.</p>
+                    <a href="sanctuaryworld.html" onmouseover="AnimateStart('sw','25.5em')"
+                        onmouseout="AnimateEnd('sw')">
+                        <h3><span><img src="resources/images/arrow.png" alt="an arrow" height=12px></span>Learn more
+
+                            <div id='sw-learn-more-line' class=learn-more-line>
+                                <div id='sw-learn-more-dot' class=learn-more-dot></div>
+                            </div>
+                        </h3>
+                    </a>
+
+                </article>
+                <figure class='project-image'>
+                    <figure class='project-image'>
+                        <a href="" onmouseover="AnimateStart('b1','40em')" onmouseout="AnimateEnd('b1')">
+                            <img id='b1-image' class='project-image-bg' src="resources/images/blog-coming-soon.jpg">
+                        </a>
+                    </figure>
+                </figure>
+                <h2 class=project-mobile-title>Sanctuary World</h2>
+            </section>
 
             <section class="project">
                 <article class='project-description'>
@@ -108,7 +126,8 @@
                     <h2>Sanctuary World</h2>
                     <p>Sanctuary World is mobile game released along side the premiere of "The Wishmas Tree". The first
                         feature film from Pony up Picture Studios.</p>
-                    <a href="sanctuaryworld.html" onmouseover="AnimateStart('sw','25.5em')" onmouseout="AnimateEnd('sw')">
+                    <a href="sanctuaryworld.html" onmouseover="AnimateStart('sw','25.5em')"
+                        onmouseout="AnimateEnd('sw')">
                         <h3><span><img src="resources/images/arrow.png" alt="an arrow" height=12px></span>Learn more
 
                             <div id='sw-learn-more-line' class=learn-more-line>
@@ -120,8 +139,9 @@
                 </article>
                 <figure class='project-image'>
                     <img class='project-image-bg' src="resources/images/sanctuaryworld/SW_Hero_BG.jpg">
-                    <a href="sanctuaryworld.html" onmouseover="AnimateStart('sw','25.5em')" onmouseout="AnimateEnd('sw')"><img id='sw-hero'
-                            class='project-image-hero' src="resources/images/sanctuaryworld/Frogman01.png"></a>
+                    <a href="sanctuaryworld.html" onmouseover="AnimateStart('sw','25.5em')"
+                        onmouseout="AnimateEnd('sw')"><img id='sw-hero' class='project-image-hero'
+                            src="resources/images/sanctuaryworld/Frogman01.png"></a>
                 </figure>
                 <h2 class=project-mobile-title>Sanctuary World</h2>
             </section>
@@ -131,7 +151,8 @@
                     <h2>Warhammer Warlords</h2>
                     <p>Warlords is a two week design challenge to create a card game set in the Warhammer universe.
                         Awaiting IP approval.</p>
-                    <a href="warhammerwarlords.html" onmouseover="AnimateStart('ww','40em')" onmouseout="AnimateEnd('ww')">
+                    <a href="warhammerwarlords.html" onmouseover="AnimateStart('ww','40em')"
+                        onmouseout="AnimateEnd('ww')">
                         <h3>Learn more
                             <span><img src="resources/images/arrow.png" alt="an arrow" height=12px></span>
                             <div id='ww-learn-more-line' class=learn-more-line>
@@ -142,8 +163,8 @@
                 </article>
                 <figure class='project-image'>
                     <img class='project-image-bg' src="resources/images/warhammerwarlords/hero-image-bg.jpg">
-                    <a href="warhammerwarlords.html" onmouseover="AnimateStart('ww','40em')" onmouseout="AnimateEnd('ww')"><img id='ww-hero'
-                            class='project-image-hero'
+                    <a href="warhammerwarlords.html" onmouseover="AnimateStart('ww','40em')"
+                        onmouseout="AnimateEnd('ww')"><img id='ww-hero' class='project-image-hero'
                             src="resources/images/warhammerwarlords/warhammer-warlords-hero.png"></a>
                 </figure>
                 <h2 class=project-mobile-title>Warhammer Warlords</h2>
@@ -228,7 +249,9 @@
                                 <img src="resources/images/logoSocialB.png" height=16px alt="">
                             </a>
                         </div>
-                        <a id="footer-links-resume" href="resources/downloads/simon-nordon-resume-2020.pdf" download="resources/downloads/simon-nordon-resume-2020.pdf" onmouseover="Hint()">Download Resume</a>
+                        <a id="footer-links-resume" href="resources/downloads/simon-nordon-resume-2020.pdf"
+                            download="resources/downloads/simon-nordon-resume-2020.pdf" onmouseover="Hint()">Download
+                            Resume</a>
                     </section>
                 </section>
                 <section>
